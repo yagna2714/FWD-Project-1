@@ -1,0 +1,155 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-item-active {
+    background: linear-gradient(90deg, #22c55e 0%, #10b981 100%);
+    color: white !important;
+}
+
+.nav-item {
+    transition: all 0.2s;
+    color: #94a3b8;
+}
+
+.nav-item:hover:not(.nav-item-active) {
+    color: #f1f5f9;
+}
+
+.card-shadow {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+.tag-active {
+    background-color: #22c55e;
+    color: white;
+    border-color: #22c55e;
+}
+
+.metric-card {
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 16px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.meal-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.result-card {
+    background-color: white;
+    border: 1px solid #f1f5f9;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+/* Dark Theme Section Styles */
+.dark-card {
+    background-color: #0d120f;
+    color: white;
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.dark-input {
+    background-color: #1a221e;
+    border: 1px solid #2a332e;
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+.dark-input:focus {
+    border-color: #22c55e;
+}
+
+/* BMI Specific */
+.bmi-bar {
+    height: 12px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #3b82f6 0%, #10b981 33%, #f59e0b 66%, #ef4444 100%);
+    position: relative;
+}
+
+.bmi-dot {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #0d120f;
+    position: absolute;
+    top: -2px;
+    transform: translateX(-50%);
+    transition: left 0.3s ease;
+}
+
+/* Tracker Bar */
+.progress-container {
+    height: 12px;
+    background-color: #1a221e;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #22c55e;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+/* Search Results Dropdown */
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1a221e;
+    border: 1px solid #2a332e;
+    border-radius: 12px;
+    margin-top: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 50;
+    display: none;
+}
+
+.search-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search-item:hover {
+    background-color: #22c55e;
+    color: white;
+}
+
+/* Circular Progress Styling */
+.water-circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.water-circle-bg {
+    fill: none;
+    stroke: #f1f5f9;
+    stroke-width: 12;
+}
+
+.water-circle-progress {
+    fill: none;
+    stroke: #3b82f6;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+}
